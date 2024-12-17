@@ -95,17 +95,6 @@ distributions:
       unv8: kilted/release-ubuntu-arm64-build.yaml
     source_builds:
       default: kilted/source-build.yaml
-  lyrical:
-    doc_builds:
-      default: lyrical/doc-build.yaml
-    notification_emails:
-    - ros2-buildfarm-rolling@googlegroups.com
-    release_builds:
-      default: lyrical/release-build.yaml
-      rhel: lyrical/release-rhel-build.yaml
-      armv8: lyrical/release-ubuntu-arm64-build.yaml
-    source_builds:
-      default: lyrical/source-build.yaml
   rolling:
     ci_builds:
       benchmark: rolling/ci-benchmark.yaml
@@ -128,17 +117,16 @@ distributions:
     doc_builds:
       default: rolling/doc-build.yaml
     notification_emails:
-    - steven+build.ros2.org@openrobotics.org
-    - ros2-buildfarm-rolling@googlegroups.com
+    - cristobal.arroyo@ekumenlabs.com
     release_builds:
       default: rolling/release-build.yaml
       rhel: rolling/release-rhel-build.yaml
       unv8: rolling/release-ubuntu-arm64-build.yaml
     source_builds:
       default: rolling/source-build.yaml
-jenkins_url: https://build.ros2.org
+jenkins_url: https://build.crola.ros2.org
 notification_emails:
-- steven+build.ros2.org@openrobotics.org
+- cristobal.arroyo@ekumenlabs.com
 prerequisites:
   debian_repositories:
   - http://repo.ros2.org/ubuntu/building
@@ -189,12 +177,12 @@ prerequisites:
 rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml
 status_page_repositories:
   default:
-  - http://repo.ros2.org/ubuntu/building
-  - http://repo.ros2.org/ubuntu/testing
-  - http://repo.ros2.org/ubuntu/main
+  - http://repo.test.ros2.org/ubuntu/building
+  - http://repo.test.ros2.org/ubuntu/testing
+  - http://repo.test.ros2.org/ubuntu/main
   rhel:
-  - http://repo.ros2.org/rhel/building
-  - http://repo.ros2.org/rhel/testing
-  - http://repo.ros2.org/rhel/main
+  - http://repo.test.ros2.org/rhel/building
+  - http://repo.test.ros2.org/rhel/testing
+  - http://repo.test.ros2.org/rhel/main
 type: buildfarm
 version: 1

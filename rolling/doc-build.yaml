@@ -11,6 +11,8 @@ jenkins_job_priority: 89
 jenkins_job_timeout: 120
 notifications:
   committers: false
+  emails:
+  - cristobal.arroyo@ekumenlabs.com
   maintainers: false
 repositories:
   keys:
