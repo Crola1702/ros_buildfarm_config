@@ -30,7 +30,7 @@ distributions:
       unv8: rolling/release-ubuntu-arm64-build.yaml
     source_builds:
       default: rolling/source-build.yaml
-jenkins_url: https://build.crola.ros2.org
+jenkins_url: http://build.crola.ros2.org:8080
 notification_emails:
 - cristobal.arroyo@ekumenlabs.com
 prerequisites:
