@@ -13,8 +13,7 @@ notifications:
   committers: true
   compiler_warnings: true
   emails:
-  - steven+build.ros2.org@openrobotics.org
-  - ros2-buildfarm-rolling@googlegroups.com
+  - cristobal.arroyo@ekumenlabs.com
   maintainers: true
 repositories:
   keys:
@@ -50,7 +49,7 @@ repositories:
     =i0tj
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://repo.ros2.org/ubuntu/testing
+  - http://repo.test.ros2.org/ubuntu/testing
 repository_blacklist:
 - ros_workspace
 targets:

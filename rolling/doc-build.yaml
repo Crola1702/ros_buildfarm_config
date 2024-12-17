@@ -10,7 +10,7 @@ jenkins_job_timeout: 120
 notifications:
   committers: false
   emails:
-  - clalancette+buildfarm@osrfoundation.org
+  - cristobal.arroyo@ekumenlabs.com
   maintainers: false
 repositories:
   keys:
@@ -46,7 +46,7 @@ repositories:
     =i0tj
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://repo.ros2.org/ubuntu/testing/
+  - http://repo.test.ros2.org/ubuntu/testing/
 targets:
   ubuntu:
     noble:

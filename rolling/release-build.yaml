@@ -12,8 +12,7 @@ jenkins_source_job_priority: 70
 jenkins_source_job_timeout: 30
 notifications:
   emails:
-  - steven+build.ros2.org@openrobotics.org
-  - ros2-buildfarm-rolling@googlegroups.com
+  - cristobal.arroyo@ekumenlabs.com
   maintainers: true
 package_dependency_behavior:
   include_test_dependencies: false
@@ -55,8 +54,8 @@ repositories:
     =i0tj
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://repo.ros2.org/ubuntu/building
-target_repository: http://repo.ros2.org/ubuntu/building
+  - http://repo.test.ros2.org/ubuntu/building
+target_repository: http://repo.test.ros2.org/ubuntu/building
 targets:
   ubuntu:
     noble:
