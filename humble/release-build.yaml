@@ -2,9 +2,12 @@
 # ROS buildfarm release-build file
 ---
 abi_incompatibility_assumed: true
-jenkins_binary_job_label: buildagent_arm64 || humble_binarydeb_ujv8
+
+build_environment_variables:
+  RTI_NC_LICENSE_ACCEPTED: 'yes'
+
 jenkins_binary_job_priority: 85
-jenkins_binary_job_timeout: 150
+jenkins_binary_job_timeout: 120
 jenkins_source_job_priority: 75
 jenkins_source_job_timeout: 30
 notifications:
@@ -15,12 +18,6 @@ notifications:
 sync:
   package_count: 499
   packages: [desktop]
-package_blacklist:
-- kortex_api  # Kinova does not provide arm64, only armv7. https://github.com/PickNikRobotics/ros2_kortex/issues/158
-- kortex_bringup  # depends on kortex_api and kortex_driver
-- kortex_driver  # depends on kortex_api and uses libKortexApiCpp.a from Kinova
-- mapviz  # Known issues with building on ARM processors. https://github.com/swri-robotics/mapviz/issues/777
-- lvr2  # LVR2 depends on libembree-dev, which is not available on Ubuntu 22 ARM64. https://packages.ubuntu.com/jammy/libembree-dev
 repositories:
   keys:
   - |
@@ -60,7 +57,7 @@ target_repository: http://repo.test.ros2.org/ubuntu/building
 targets:
   ubuntu:
     jammy:
-      arm64:
+      amd64:
 type: release-build
 upload_credential_id: jenkins-agent
 version: 2
