@@ -1,0 +1,67 @@
+%YAML 1.1
+# ROS buildfarm ci-build file
+---
+build_environment_variables:
+  CONNEXTDDS_DIR: '/opt/rti.com/rti_connext_dds-6.0.1'
+  # must override since the default has been removed from RMW_IMPLEMENTATIONS
+  RMW_IMPLEMENTATION: 'rmw_connextdds'
+  RMW_IMPLEMENTATIONS: 'rmw_connextdds:rmw_cyclonedds_cpp'
+  ROS_PYTHON_VERSION: '3'
+  RTI_NC_LICENSE_ACCEPTED: 'yes'
+build_tool: colcon
+build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_SINGLE_RMW_TESTS=1 --no-warn-unused-cli'
+build_tool_test_args: '--retest-until-pass 2 --ctest-args -LE xfail --pytest-args -m "not xfail"'
+install_packages:
+- libssl-dev  # for Fast-DDS security
+jenkins_job_label: ci-agent
+jenkins_job_priority: 50
+jenkins_job_timeout: 300
+jenkins_job_upstream_triggers:
+- nightly-release
+jenkins_job_weight: 4
+package_selection_args: '--packages-select test_communication'
+repos_files:
+- https://github.com/ros2/ros2/raw/jazzy/ros2.repos
+repositories:
+  keys:
+  - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    mQINBGYUJCYBEADXpKyb8PqEdQFXqW3iUWvfub0jd6cD0LJE9Huh4dCO0oStJzFJ
+    Ml9RJw5oBZA5zb08PysK4aRKr8Abd0I25EPYOe96I+S5zYNHBKosdMRDUwUYGK0H
+    41ih4NJ3hJ7BVivdBWln8CVPthUy4bNjaKAsNRB9qgcCc/DM6GTG/qD5pASGa2op
+    kB7KyeDrQ7Ykuz+vufteXO2k/LipSlzKGICmZp2907x9JSj/NywLR69pDm6fDjKo
+    DAkWFD5SrycRgvjBIM7hZk8BSs4XElYwPYOBtfSrf/yALg+PSFPO8NqlL0SLWCDe
+    kY78TYSrIJBrEghNKp2NuDeHjc0F775ncUs4i8LKX/RkEbSsGBgVH7cSwX5FTaMf
+    AkNzcfkjnpIT90XLkxoLlqdkI7A8jRMlnjWlwSBEPT4ouAQbpxHtk6ZZOgN+OX12
+    6knzaaIn7EZqqou+KsnoibWw+2l75/CuMk/bYJ/U8deMQUnQs/qct3CujeGE2Fvx
+    IeP+YZQkh2dsnKhwPPHTmOsb0WjFpI8yVP+F1GVBtCvLbOY9gwmioZvKhnBHVcPC
+    UqQvgwmZtOY0HREfaj4JbMkLqbyAnJik/gTFnGNStH4ADj+nfUhdHTGGiCpkDpdX
+    5nPGM6H+yEhtd5n8AK+tyosdPHvmD3SFvWh+j/SwZsheDZlNBawiOdhALQARAQAB
+    tEdST1MgQnVpbGRmYXJtIFNUQUdJTkcgKFJPUyBCdWlsZGZhcm0gU1RBR0lORykg
+    PHN0ZXZlbkBvcGVucm9ib3RpY3Mub3JnPokCVwQTAQgAQRYhBFMIeJMTPRbwRZ0j
+    BUBQkdYdTBqoBQJmFCQmAhsDBQkDwmcABQsJCAcCAiICBhUKCQgLAgQWAgMBAh4H
+    AheAAAoJEEBQkdYdTBqoxcUP/j6H2n7z9jStG7U81gC9fug46aNYR2qEhlyL/qIj
+    CgI/7EZ9nK43tq3+3qPFKag/FGN15da7LnLnxcB4Oov4vuMznOtZg53UUI6m9Kqf
+    rLZw2KTo+fHMtOlxVWYNeXEy/EEjKFP/wbHeOx2ojPbYqCQRNQ9EEX190lLtBuOO
+    SDJyhkvFOgE9V2raCSXhjBA1DfhDbtq1vCwZVo62Y20vomwB8gG+hxvKi/X0a8wk
+    5/wDqyl0QxpnfbAZVxuuZc4tNaRkFj+p6v0DsuZuTZ6CAt8Y+T8DfBN7SSPcWX4M
+    Z3K8L959Mc+BE0+f6yEX1kx7XTYcqmz7ODzaJ+BezGL7rOF0eX9Xia4NrME/QMW/
+    JADTV37pnZ68C7iP0/xlMjPLi5quLbc+QEffhfnrewcOBy+yiwg4o68/mxyDnVfw
+    FJStW1+P8T5m4mnwLopr19NA4+ukCoxpCwz7UlgFU97O8j3OJUjrqvCF2rybEzhe
+    mEzm8aclv3tTqHuP5i2fPvjujBa3/3vDuWR7WbXQDaM+ntIaV88pe9Aikh4Fczv1
+    yH6AkBi66KQoGAI2Tekxu8zbCA12RwwAlri2wh9w+jNCv4qaG8Qv0JZWm1R79KNG
+    v7R5x+2XAbNPDK5f1ktTpV0BoL0MHpm4432fjzRKh54v+ilGwcfdh2lPY+Ey+kw3
+    6zws
+    =6iqn
+    -----END PGP PUBLIC KEY BLOCK----
+  urls:
+  - http://repo.test.ros2.org/ubuntu/testing
+targets:
+  ubuntu:
+    noble:
+      amd64:
+type: ci-build
+underlay_from_ci_jobs:
+- nightly-release
+version: 1
