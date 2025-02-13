@@ -1,0 +1,66 @@
+%YAML 1.1
+# ROS buildfarm release-build file
+---
+abi_incompatibility_assumed: true
+
+build_environment_variables:
+  RTI_NC_LICENSE_ACCEPTED: 'yes'
+
+jenkins_binary_job_priority: 80
+jenkins_binary_job_timeout: 120
+jenkins_source_job_priority: 70
+jenkins_source_job_timeout: 30
+notifications:
+  emails:
+  - steven+build.ros2.org@openrobotics.org
+  - ros2-buildfarm-jazzy@googlegroups.com
+  maintainers: true
+package_dependency_behavior:
+  include_test_dependencies: false
+  run_package_tests: false
+sync:
+  package_count: 499
+  packages: [desktop]
+repositories:
+  keys:
+  - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    mQINBGYUJCYBEADXpKyb8PqEdQFXqW3iUWvfub0jd6cD0LJE9Huh4dCO0oStJzFJ
+    Ml9RJw5oBZA5zb08PysK4aRKr8Abd0I25EPYOe96I+S5zYNHBKosdMRDUwUYGK0H
+    41ih4NJ3hJ7BVivdBWln8CVPthUy4bNjaKAsNRB9qgcCc/DM6GTG/qD5pASGa2op
+    kB7KyeDrQ7Ykuz+vufteXO2k/LipSlzKGICmZp2907x9JSj/NywLR69pDm6fDjKo
+    DAkWFD5SrycRgvjBIM7hZk8BSs4XElYwPYOBtfSrf/yALg+PSFPO8NqlL0SLWCDe
+    kY78TYSrIJBrEghNKp2NuDeHjc0F775ncUs4i8LKX/RkEbSsGBgVH7cSwX5FTaMf
+    AkNzcfkjnpIT90XLkxoLlqdkI7A8jRMlnjWlwSBEPT4ouAQbpxHtk6ZZOgN+OX12
+    6knzaaIn7EZqqou+KsnoibWw+2l75/CuMk/bYJ/U8deMQUnQs/qct3CujeGE2Fvx
+    IeP+YZQkh2dsnKhwPPHTmOsb0WjFpI8yVP+F1GVBtCvLbOY9gwmioZvKhnBHVcPC
+    UqQvgwmZtOY0HREfaj4JbMkLqbyAnJik/gTFnGNStH4ADj+nfUhdHTGGiCpkDpdX
+    5nPGM6H+yEhtd5n8AK+tyosdPHvmD3SFvWh+j/SwZsheDZlNBawiOdhALQARAQAB
+    tEdST1MgQnVpbGRmYXJtIFNUQUdJTkcgKFJPUyBCdWlsZGZhcm0gU1RBR0lORykg
+    PHN0ZXZlbkBvcGVucm9ib3RpY3Mub3JnPokCVwQTAQgAQRYhBFMIeJMTPRbwRZ0j
+    BUBQkdYdTBqoBQJmFCQmAhsDBQkDwmcABQsJCAcCAiICBhUKCQgLAgQWAgMBAh4H
+    AheAAAoJEEBQkdYdTBqoxcUP/j6H2n7z9jStG7U81gC9fug46aNYR2qEhlyL/qIj
+    CgI/7EZ9nK43tq3+3qPFKag/FGN15da7LnLnxcB4Oov4vuMznOtZg53UUI6m9Kqf
+    rLZw2KTo+fHMtOlxVWYNeXEy/EEjKFP/wbHeOx2ojPbYqCQRNQ9EEX190lLtBuOO
+    SDJyhkvFOgE9V2raCSXhjBA1DfhDbtq1vCwZVo62Y20vomwB8gG+hxvKi/X0a8wk
+    5/wDqyl0QxpnfbAZVxuuZc4tNaRkFj+p6v0DsuZuTZ6CAt8Y+T8DfBN7SSPcWX4M
+    Z3K8L959Mc+BE0+f6yEX1kx7XTYcqmz7ODzaJ+BezGL7rOF0eX9Xia4NrME/QMW/
+    JADTV37pnZ68C7iP0/xlMjPLi5quLbc+QEffhfnrewcOBy+yiwg4o68/mxyDnVfw
+    FJStW1+P8T5m4mnwLopr19NA4+ukCoxpCwz7UlgFU97O8j3OJUjrqvCF2rybEzhe
+    mEzm8aclv3tTqHuP5i2fPvjujBa3/3vDuWR7WbXQDaM+ntIaV88pe9Aikh4Fczv1
+    yH6AkBi66KQoGAI2Tekxu8zbCA12RwwAlri2wh9w+jNCv4qaG8Qv0JZWm1R79KNG
+    v7R5x+2XAbNPDK5f1ktTpV0BoL0MHpm4432fjzRKh54v+ilGwcfdh2lPY+Ey+kw3
+    6zws
+    =6iqn
+    -----END PGP PUBLIC KEY BLOCK----
+  urls:
+  - http://repo.test.ros2.org/ubuntu/building
+target_repository: http://repo.test.ros2.org/ubuntu/building
+targets:
+  ubuntu:
+    noble:
+      amd64:
+type: release-build
+upload_credential_id: jenkins-agent
+version: 2
