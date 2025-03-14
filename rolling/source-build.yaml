@@ -49,7 +49,7 @@ repositories:
     =6iqn
     -----END PGP PUBLIC KEY BLOCK----
   urls:
-  - http://repo.test.ros2.org/ubuntu/testing
+  - http://10.43.234.249/ubuntu/testing
 repository_blacklist:
 - ros_workspace
 targets:
