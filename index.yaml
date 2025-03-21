@@ -30,12 +30,12 @@ distributions:
       unv8: rolling/release-ubuntu-arm64-build.yaml
     source_builds:
       default: rolling/source-build.yaml
-jenkins_url: http://10.43.234.178/
+jenkins_url: http://buildfarm-jenkins.local-lxd/
 notification_emails:
 - cristobal.arroyo@ekumenlabs.com
 prerequisites:
   debian_repositories:
-  - http://10.43.234.249/ubuntu/building
+  - http://buildfarm-repo.local-lxd/ubuntu/building
   debian_repository_keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -71,12 +71,12 @@ prerequisites:
 rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml
 status_page_repositories:
   default:
-  - http://10.43.234.249/ubuntu/building
-  - http://10.43.234.249/ubuntu/testing
-  - http://10.43.234.249/ubuntu/main
+  - http://buildfarm-repo.local-lxd/ubuntu/building
+  - http://buildfarm-repo.local-lxd/ubuntu/testing
+  - http://buildfarm-repo.local-lxd/ubuntu/main
   rhel:
-  - http://10.43.234.249/rhel/building
-  - http://10.43.234.249/rhel/testing
-  - http://10.43.234.249/rhel/main
+  - http://buildfarm-repo.local-lxd/rhel/building
+  - http://buildfarm-repo.local-lxd/rhel/testing
+  - http://buildfarm-repo.local-lxd/rhel/main
 type: buildfarm
 version: 1

@@ -46,7 +46,7 @@ repositories:
     =6iqn
     -----END PGP PUBLIC KEY BLOCK----
   urls:
-  - http://10.43.234.249/ubuntu/testing/
+  - http://buildfarm-repo.local-lxd/ubuntu/testing/
 targets:
   ubuntu:
     noble:
