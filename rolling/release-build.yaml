@@ -66,8 +66,8 @@ repositories:
     =9IZg
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://repo.test.ros2.org/ubuntu/building
-target_repository: http://repo.test.ros2.org/ubuntu/building
+  - http://repo.ros2.org/ubuntu/building
+target_repository: http://repo.ros2.org/ubuntu/building
 targets:
   ubuntu:
     resolute:
