@@ -29,8 +29,7 @@ distributions:
     doc_builds:
       default: humble/doc-build.yaml
     notification_emails:
-    - audrow+build.ros2.org@openrobotics.org
-    - ros2-buildfarm-humble@googlegroups.com
+    - cristobal.arroyo@ekumenlabs.com
     release_builds:
       default: humble/release-build.yaml
       rhel: humble/release-rhel-build.yaml
@@ -58,8 +57,7 @@ distributions:
     doc_builds:
       default: jazzy/doc-build.yaml
     notification_emails:
-    - marcogg+build.ros2.org@intrinsic.ai
-    - ros2-buildfarm-jazzy@googlegroups.com
+    - cristobal.arroyo@ekumenlabs.com
     release_builds:
       default: jazzy/release-build.yaml
       rhel: jazzy/release-rhel-build.yaml
@@ -88,7 +86,7 @@ distributions:
     doc_builds:
       default: kilted/doc-build.yaml
     notification_emails:
-    - ros2-buildfarm-kilted@googlegroups.com
+    - cristobal.arroyo@ekumenlabs.com
     release_builds:
       default: kilted/release-build.yaml
       rhel: kilted/release-rhel-build.yaml
