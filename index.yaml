@@ -127,7 +127,7 @@ notification_emails:
 - cristobal.arroyo@ekumenlabs.com
 prerequisites:
   debian_repositories:
-  - http://repo.ros2.org/ubuntu/building
+  - http://repo.test.ros2.org/ubuntu/building
   debian_repository_keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -172,7 +172,7 @@ prerequisites:
     CEXRgHY3Utq/I3CLJ+KcJCUCH5D16Z7aOoazG9DKbewA+da8Drw=
     =9IZg
     -----END PGP PUBLIC KEY BLOCK-----
-rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml
+rosdistro_index_url: https://github.com/Crola1702/rosdistro/blob/master/index.yaml
 status_page_repositories:
   default:
   - http://repo.test.ros2.org/ubuntu/building

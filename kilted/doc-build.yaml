@@ -46,7 +46,7 @@ repositories:
     =6iqn
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://repo.ros2.org/ubuntu/testing/
+  - http://repo.test.ros2.org/ubuntu/testing/
 targets:
   ubuntu:
     noble:
