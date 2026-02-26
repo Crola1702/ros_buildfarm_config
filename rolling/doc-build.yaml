@@ -53,6 +53,8 @@ targets:
   ubuntu:
     resolute:
       amd64:
+    resolute:
+      amd64:
 type: doc-build
 upload_credential_id: rosdocs
 upload_host: docs.ros.org

@@ -60,6 +60,8 @@ targets:
   ubuntu:
     resolute:
       amd64:
+    resolute:
+      amd64:
 type: release-build
 upload_credential_id: jenkins-agent
 version: 2
