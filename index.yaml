@@ -172,7 +172,7 @@ prerequisites:
     CEXRgHY3Utq/I3CLJ+KcJCUCH5D16Z7aOoazG9DKbewA+da8Drw=
     =9IZg
     -----END PGP PUBLIC KEY BLOCK-----
-rosdistro_index_url: https://github.com/Crola1702/rosdistro/blob/master/index.yaml
+rosdistro_index_url: https://raw.githubusercontent.com/Crola1702/rosdistro/refs/heads/master/rolling/distribution.yaml
 status_page_repositories:
   default:
   - http://repo.test.ros2.org/ubuntu/building
