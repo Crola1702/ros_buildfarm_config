@@ -56,8 +56,6 @@ targets:
   ubuntu:
     resolute:
       amd64:
-    resolute:
-      amd64:
 test_commits:
   default: true
 test_pull_requests:

@@ -53,8 +53,6 @@ targets:
   ubuntu:
     resolute:
       amd64:
-    resolute:
-      amd64:
 type: ci-build
 upload_directory: nightly-cyclonedds
 version: 1
