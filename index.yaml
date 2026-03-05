@@ -160,7 +160,7 @@ prerequisites:
     6zws
     =6iqn
     -----END PGP PUBLIC KEY BLOCK-----
-rosdistro_index_url: https://raw.githubusercontent.com/Crola1702/rosdistro/refs/heads/master/rolling/distribution.yaml
+rosdistro_index_url: https://raw.githubusercontent.com/Crola1702/rosdistro/refs/heads/Crola1702/use-wildcards/index-v4.yaml
 status_page_repositories:
   default:
   - http://repo.test.ros2.org/ubuntu/building
