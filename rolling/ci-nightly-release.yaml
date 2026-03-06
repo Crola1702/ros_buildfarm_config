@@ -55,5 +55,9 @@ targets:
   ubuntu:
     resolute:
       amd64:
+        targets:
+  _config:
+    custom_rosdep_urls:
+      - https://raw.githubusercontent.com/Crola1702/rosdistro/refs/heads/Crola1702/use-wildcards/rosdep/sources.list.d/20-default.list
 type: ci-build
 version: 1
