@@ -38,22 +38,22 @@ repositories:
     UqQvgwmZtOY0HREfaj4JbMkLqbyAnJik/gTFnGNStH4ADj+nfUhdHTGGiCpkDpdX
     5nPGM6H+yEhtd5n8AK+tyosdPHvmD3SFvWh+j/SwZsheDZlNBawiOdhALQARAQAB
     tEdST1MgQnVpbGRmYXJtIFNUQUdJTkcgKFJPUyBCdWlsZGZhcm0gU1RBR0lORykg
-    PHN0ZXZlbkBvcGVucm9ib3RpY3Mub3JnPokCVwQTAQgAQRYhBFMIeJMTPRbwRZ0j
-    BUBQkdYdTBqoBQJmFCQmAhsDBQkDwmcABQsJCAcCAiICBhUKCQgLAgQWAgMBAh4H
-    AheAAAoJEEBQkdYdTBqoxcUP/j6H2n7z9jStG7U81gC9fug46aNYR2qEhlyL/qIj
-    CgI/7EZ9nK43tq3+3qPFKag/FGN15da7LnLnxcB4Oov4vuMznOtZg53UUI6m9Kqf
-    rLZw2KTo+fHMtOlxVWYNeXEy/EEjKFP/wbHeOx2ojPbYqCQRNQ9EEX190lLtBuOO
-    SDJyhkvFOgE9V2raCSXhjBA1DfhDbtq1vCwZVo62Y20vomwB8gG+hxvKi/X0a8wk
-    5/wDqyl0QxpnfbAZVxuuZc4tNaRkFj+p6v0DsuZuTZ6CAt8Y+T8DfBN7SSPcWX4M
-    Z3K8L959Mc+BE0+f6yEX1kx7XTYcqmz7ODzaJ+BezGL7rOF0eX9Xia4NrME/QMW/
-    JADTV37pnZ68C7iP0/xlMjPLi5quLbc+QEffhfnrewcOBy+yiwg4o68/mxyDnVfw
-    FJStW1+P8T5m4mnwLopr19NA4+ukCoxpCwz7UlgFU97O8j3OJUjrqvCF2rybEzhe
-    mEzm8aclv3tTqHuP5i2fPvjujBa3/3vDuWR7WbXQDaM+ntIaV88pe9Aikh4Fczv1
-    yH6AkBi66KQoGAI2Tekxu8zbCA12RwwAlri2wh9w+jNCv4qaG8Qv0JZWm1R79KNG
-    v7R5x+2XAbNPDK5f1ktTpV0BoL0MHpm4432fjzRKh54v+ilGwcfdh2lPY+Ey+kw3
-    6zws
-    =6iqn
-    -----END PGP PUBLIC KEY BLOCK----
+    PHN0ZXZlbkBvcGVucm9ib3RpY3Mub3JnPokCVwQTAQgAQQIbAwULCQgHAgIiAgYV
+    CgkICwIEFgIDAQIeBwIXgBYhBFMIeJMTPRbwRZ0jBUBQkdYdTBqoBQJqAzE8BQkH
+    BhEWAAoJEEBQkdYdTBqoMscP/0vOe4UToepFYNRZn86WHvHIgte16EiktwlhS32q
+    aYQwcfXyqjXdq7fXZvmVf8N6kBWlwbI3YkJBp6BvgE/40ktpTHxRfLMJBb0vi1H9
+    cVosFYqUeeb8xcJE5lhlX7V0vW8mN8Dcfql38zt/MFcQTTZ+4sCeYdxCdZMMZ4qP
+    nbHVUoZWwBQL9RpGEFq9bp+/Sc8ThDAHdoCJyxeTbplfdFQjUTKwzji2QNkcsFK8
+    1TZ488+Dl7P5Pv29khIRH8AEi7cP9DFoO081CsYGqsximCZQvnu/Ox2uI1d7MdPu
+    S7nL9agYa03V3CF33r9Z7qoaMOzay2HhlgI6AQ68l7uVhxPQZT4JAC8aIPGkT6B0
+    LAMhjyfyCIe+iGAKuAwFwv5uMYrLOJBajSedpNDiIIchD3iYI+VFnx60oTkIYhPG
+    ogxEY0ylHtIrInHevQprqgZGBQ0SgwFV27Gh24zt68w+/b9+y86NkKFjvBO3+Bpb
+    wazxW0pwF8O9Ww+h5Ely8TKYg8ppGZnfwacxgKOB4f96zJVdiBTrNTkOA8piGhd9
+    8lG908LE1Z5NxWZQfR7CrMnjcwtP/iMmGyueqaolHrXKHa4To/RKkALx1Fdk09nE
+    4GbYOGqZRG3wccCNKhp8REXe1Y/qG8t8Uoovhm6XMA0l6s4W2001AUAWyY8oURFq
+    FCK0
+    =zVKh
+    -----END PGP PUBLIC KEY BLOCK-----
   urls:
   - http://repo.test.ros2.org/ubuntu/testing
 targets:
