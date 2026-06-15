@@ -7,7 +7,7 @@ build_environment_variables:
   RTI_NC_LICENSE_ACCEPTED: 'yes'
 build_tool: colcon
 jenkins_commit_job_priority: 50
-jenkins_job_timeout: 120
+jenkins_job_timeout: 480
 jenkins_pull_request_job_priority: 40
 notifications:
   committers: true

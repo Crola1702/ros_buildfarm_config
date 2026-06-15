@@ -8,7 +8,7 @@ build_environment_variables:
 canonical_base_url: http://docs.ros.org/en
 documentation_type: rosdoc2
 jenkins_job_priority: 89
-jenkins_job_timeout: 120
+jenkins_job_timeout: 480
 notifications:
   committers: false
   emails:
